@@ -372,5 +372,14 @@
     <!-- Which timestamps -->
     <string name="pref_title_mms_use_sent_timestamp">Исходная метка времени</string>
     <string name="pref_summary_mms_use_sent_timestamp">Отображение и сохранение даты отправки, а не даты приёма</string>
+    
+    <!-- Change Vibrate pattern/method for message notification -->
+    <string name="pref_title_mms_notification_vibrate_settings">Настройки вибрации</string>
+    <string name="pref_title_mms_notification_vibrate_pattern">Режим вибрации</string>
+    <string name="pref_summary_mms_notification_vibrate_pattern">Изменение режима вибрации</string>
+    <string name="pref_title_mms_notification_vibrate_call">Вибрация при разговоре</string>
+    <string name="pref_summary_mms_notification_vibrate_call">Разрешить вибрацию при разговоре</string>
+    <string name="pref_title_mms_notification_vibrate_custom">Пользоват. режим вибрации</string>
+    <string name="pref_text_mms_notification_vibrate_custom">Формат выкл/вкл в миллисекундах: выкл, вкл, выкл, вкл, \u2026</string>
 
 </resources>

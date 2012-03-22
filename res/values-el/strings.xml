@@ -150,10 +150,10 @@
     <string name="try_to_send" msgid="1996751738286080976">"Προσπάθεια αποστολής"</string>
     <string name="preferences_title" msgid="6650089610332670157">"Ρυθμίσεις"</string>
     <string name="restore_default" msgid="7165341506551155053">"Επαναφορά προεπιλεγμένων ρυθμίσεων"</string>
-    <string name="pref_notification_settings_title" msgid="6420782563630369776">"Ειδοποιήσεις"</string>
-    <string name="pref_mms_settings_title" msgid="55618772118264355">"Μηνύματα πολυμέσων (MMS)"</string>
-    <string name="pref_sms_settings_title" msgid="5173078369851066881">"Μηνύματα κειμένου (SMS)"</string>
-    <string name="pref_sms_storage_title" msgid="9001233319190616445">"Χώρος αποθήκευσης"</string>
+    <string name="pref_notification_settings_title">Ειδοποιησεις</string>
+    <string name="pref_mms_settings_title">Μηνυματα πολυμεσων (MMS)</string>
+    <string name="pref_sms_settings_title">Μηνυματα κειμενου (SMS)</string>
+    <string name="pref_sms_storage_title">Χωρος αποθηκευσης</string>
     <string name="pref_summary_manage_sim_messages" msgid="4141349892597640864">"Διαχείριση μηνυμάτων που είναι αποθηκευμένα στην κάρτα SIM"</string>
     <string name="pref_summary_mms_delivery_reports" msgid="4874657984217756112">"Αίτηση αναφοράς παράδοσης για κάθε μήνυμα που στέλνετε"</string>
     <string name="pref_summary_mms_read_reports" msgid="2748323864008907440">"Αίτηση αναφοράς ανάγνωσης για κάθε μήνυμα που στέλνετε"</string>
@@ -173,6 +173,13 @@
     <string name="pref_summary_notification_vibrateWhen" msgid="669655090822561447">"Δόνηση κατά την ειδοποίηση"</string>
     <string name="pref_title_notification_ringtone" msgid="5467265237106229952">"Επιλέξτε ήχο κλήσης"</string>
     <string name="pref_messages_to_save" msgid="3202539743892934926">"Ορισμός αριθμού μηνυμάτων για αποθήκευση"</string>
+    <string name="pref_title_sms_split_160">SMS split</string>
+    <!-- Settings item description for boolean SMS Split 160 characters setting -->
+    <string name="pref_summary_sms_split_160">Διαχωρισμός μηνυμάτων ανά 160 χαρακτήρες</string>
+    <!-- Settings item for boolean option for SMS Split Counter -->
+    <string name="pref_title_sms_split_counter">Μετρητής split</string>
+    <!-- Settings item description for boolean SMS Split 160 characters setting -->
+    <string name="pref_summary_sms_split_counter">Προσθέτει μετρητή στο μήνυμα π.χ. (1/2)</string>
   <string-array name="prefEntries_vibrateWhen">
     <item msgid="2520871831815631409">"Πάντα"</item>
     <item msgid="6069709696037750627">"Μόνο στο αθόρυβο"</item>
@@ -321,11 +328,46 @@
     <string name="pick_too_many_recipients" msgid="650087588867628044">"Πάρα πολλοί παραλήπτες"</string>
     <string name="adding_recipients" msgid="2962810172527532357">"Προσθήκη παραληπτών…"</string>
     <string name="draft_separator" msgid="5402575086540243019">", "</string>
-    <string name="message_count_format" msgid="4434763220590778012">" <xliff:g id="NUMBER">%1$s</xliff:g>"</string>
+    <string name="message_count_format" msgid="4434763220590778012">" <xliff:g id="NUMBER">%1$s</xliff:g>"</string>
     <string name="error_state" msgid="5177386717626893507">"Ασταθής κατάσταση"</string>
     <string name="error_state_text" msgid="7918866106335387710">"Η κατάσταση των νημάτων και των παραληπτών δεν είναι σταθερή. Καταγράψτε μια αναφορά σφάλματος και αναφέρετέ την μέσω της διεύθυνσης http://go/droidanizer"</string>
   <plurals name="recipient_count">
     <item quantity="other" msgid="7338580381574463136">"<xliff:g id="NUMBER">%1$s</xliff:g> άτομα"</item>
   </plurals>
     <string name="disable_notifications_dialog_message" msgid="7644011234972074096">"Διακοπή ειδοποιήσεων διπλού μηνύματος κειμένου από την προεπιλεγμένη εφαρμογή ανταλλαγής μηνυμάτων;"</string>
+    <string name="prefs_templates_settings">Προτυπα Sms</string>
+    <string name="pref_title_templates_manage">Πρότυπα</string>
+    <string name="pref_summary_templates_manage">Διαχείριση πρότυπων sms</string>
+    <string name="pref_title_templates_show_gesture">Χειρονομία</string>
+    <string name="pref_summary_templates_show_gesture">Εμφάνιση ίχνους χειρονομίας</string>
+    <string name="pref_title_template_gestures_sensitivity">Ευαισθησία χειρονομίας</string>
+    <string name="template_save">Αποθήκευση</string>
+    <string name="template_insert_hint">Εισαγωγή κειμένου</string>
+    <string name="template_empty_text">Το πεδίο κειμένου δεν πρέπει να είναι κενό</string>
+    <string name="template_explanation">Εισάγετε ή τροποποιήστε το κείμενο του πρότυπου μηνύματος και προαιρετικά συνδέστε το με κάποια χειρονομία</string>
+    <string name="template_edit">Επεξεργασία</string>
+    <string name="template_delete">Διαγραφή</string>
+    <string name="template_ctx_menu_title">Επιλογές</string>
+    <string name="template_list_title">Πρότυπα</string>
+    <string name="template_new_title">Νέο πρότυπο</string>
+    <string name="template_insert">Εισαγωγή προτύπου</string>
+    <string name="template_gesture_draw">Σχεδιάστε μία χειρονομία στο παρακάτω κενό</string>
+    <string name="template_not_present_error">Δεν έχετε καθορίσει κάποιο πρότυπο</string>
+    <string name="template_not_present_error_title">Σφάλμα</string>
+    <string name="template_select">Επιλογή προτύπου</string>
+    <string name="template_cancel_confirm_title">Προσοχή</string>
+    <string name="template_cancel_confirm_text">Θέλετε να συνεχίσετε με τη διαγραφή;</string>
+    <string name="gestures_already_present">Προσοχή: Κάποιο πρότυπο έχει παρόμοια χειρονομία!</string>
+    <string name="pref_extra_settings">Επιπλεον ρυθμισεις</string>
+    <string name="pref_title_mms_full_timestamp">Πλήρη timestamps</string>
+    <string name="pref_summary_mms_full_timestamp">Εμφάνιση ημερομηνίας και ώρας στα timestamps</string>
+    <string name="pref_title_mms_use_sent_timestamp">Πρωτότυπα timestamps</string>
+    <string name="pref_summary_mms_use_sent_timestamp">Εμφάνιση ημερ. αποστολής αντί για ημερ. παράδοσης στα timestamps</string>
+    <string name="pref_title_mms_notification_vibrate_settings">Ρυθμίσεις δόνησης</string>
+    <string name="pref_title_mms_notification_vibrate_pattern">Τύπος δονησης</string>
+    <string name="pref_summary_mms_notification_vibrate_pattern">Αλλαγή τύπου δόνησης</string>
+    <string name="pref_title_mms_notification_vibrate_call">Δόνηση κατά την Κλήση</string>
+    <string name="pref_summary_mms_notification_vibrate_call">Να επιτρέπεται η δόνηση κατά τη διάρκεια κλήσης</string>
+    <string name="pref_title_mms_notification_vibrate_custom">Προσαρμοσμένος τύπος δόνησης</string>
+    <string name="pref_text_mms_notification_vibrate_custom">Μορφή off/on σε milliseconds: off, on, off, on, ...</string>
 </resources>

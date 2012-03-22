@@ -18,6 +18,7 @@
 package com.android.mms.transaction;
 
 import com.android.mms.LogTag;
+import com.android.mms.MmsConfig;
 import com.android.mms.ui.MessagingPreferenceActivity;
 import com.google.android.mms.MmsException;
 import android.database.sqlite.SqliteWrapper;
@@ -91,9 +92,7 @@ public class SmsMessageSender implements MessageSender {
                 MessagingPreferenceActivity.SMS_DELIVERY_REPORT_MODE,
                 DEFAULT_DELIVERY_REPORT_MODE);
 
-        boolean splitMessage = prefs.getBoolean(
-                MessagingPreferenceActivity.SMS_SPLIT_MESSAGE,
-                DEFAULT_SMS_SPLIT_MESSAGE);
+        boolean splitMessage = MmsConfig.getSpiltSmsEnabled();
 
         boolean splitCounter = prefs.getBoolean(
                 MessagingPreferenceActivity.SMS_SPLIT_COUNTER,

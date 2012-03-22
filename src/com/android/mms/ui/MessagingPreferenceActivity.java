@@ -140,7 +140,7 @@ public class MessagingPreferenceActivity extends PreferenceActivity {
             smsCategory.removePreference(mSmsDeliveryReportPref);
         }
         
-        if (!MmsConfig.getSpiltSmsEnable()) {
+        if (!MmsConfig.getSpiltSmsEnabled()) {
 			// SMS Split disabled, remove SplitCounter pref
 			PreferenceCategory smsCategory =
 				(PreferenceCategory)findPreference("pref_key_sms_settings");

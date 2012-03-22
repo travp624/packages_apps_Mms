@@ -204,8 +204,9 @@ public class MmsConfig {
         return mEnableMultipartSMS;
     }
     
-    public static boolean getSpiltSmsEnable() {
+    public static boolean getSpiltSmsEnabled() {
 		return mEnableSplitSMS;
+	}
 
     public static boolean getSlideDurationEnabled() {
         return mEnableSlideDuration;

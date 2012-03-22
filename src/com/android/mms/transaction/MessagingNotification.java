@@ -593,7 +593,7 @@ public class MessagingNotification {
 
             if ((vibrateAlways || vibrateSilent && nowSilent) && (vibrateOnCall || (!vibrateOnCall && callStateIdle))) {
                 /* WAS: notificationdefaults |= Notification.DEFAULT_VIBRATE;*/
-                String mVibratePattern = "custom".equals(sp.getString(MessagingPreferenceActivity.NOTIFICATION_VIBRATE_PATTERN, null)
+                String mVibratePattern = "custom".equals(sp.getString(MessagingPreferenceActivity.NOTIFICATION_VIBRATE_PATTERN, null))
                     ? sp.getString(MessagingPreferenceActivity.NOTIFICATION_VIBRATE_PATTERN_CUSTOM, "0,1200")
                     : sp.getString(MessagingPreferenceActivity.NOTIFICATION_VIBRATE_PATTERN, "0,1200");
                 if(!mVibratePattern.equals("")) {

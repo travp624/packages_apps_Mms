@@ -50,15 +50,15 @@ public class Contact {
     private static ContactsCache sContactCache;
     private static final String SELF_ITEM_KEY = "Self_Item_Key";
 
-//    private static final ContentObserver sContactsObserver = new ContentObserver(new Handler()) {
-//        @Override
-//        public void onChange(boolean selfUpdate) {
-//            if (Log.isLoggable(LogTag.APP, Log.VERBOSE)) {
-//                log("contact changed, invalidate cache");
-//            }
-//            invalidateCache();
-//        }
-//    };
+    private static final ContentObserver sContactsObserver = new ContentObserver(new Handler()) {
+        @Override
+        public void onChange(boolean selfUpdate) {
+            if (Log.isLoggable(LogTag.APP, Log.VERBOSE)) {
+                log("contact changed, invalidate cache");
+            }
+            invalidateCache();
+        }
+    };
 
     private static final ContentObserver sPresenceObserver = new ContentObserver(new Handler()) {
         @Override
@@ -360,10 +360,8 @@ public class Contact {
         // cache each time that occurs. Unless we can get targeted updates for the contacts we
         // care about(which probably won't happen for a long time), we probably should just
         // invalidate cache peoridically, or surgically.
-        /*
         context.getContentResolver().registerContentObserver(
                 Contacts.CONTENT_URI, true, sContactsObserver);
-        */
     }
 
     public static void dump() {

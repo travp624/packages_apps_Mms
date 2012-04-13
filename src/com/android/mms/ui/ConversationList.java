@@ -266,9 +266,11 @@ public class ConversationList extends ListActivity implements DraftCache.OnDraft
         // threads, don't invalidate the cache because we're in the process of building it.
         // TODO: think of a better way to invalidate cache more surgically or based on actual
         // TODO: changes we care about
+        /*
         if (!Conversation.loadingThreads()) {
             Contact.invalidateCache();
         }
+        */
     }
 
     @Override

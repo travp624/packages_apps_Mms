@@ -142,7 +142,7 @@ public class MessageItem {
             if (!isOutgoingMessage()) {
                 // Set "received" or "sent" time stamp
                 long date = cursor.getLong(columnsMap.mColumnSmsDate);
-                if (mSentTimestamp && mType.equals(Sms.MESSAGE_TYPE_INBOX)) {
+                if (mSentTimestamp && (mBoxId == Sms.MESSAGE_TYPE_INBOX)) {
                     date = cursor.getLong(columnsMap.mColumnSmsDateSent);
                 }
                 mTimestamp = MessageUtils.formatTimeStampString(context, date, mFullTimestamp);

@@ -782,6 +782,9 @@
     <!-- Extra Settings: -->
     <string name="pref_extra_settings">Extra settings</string>
 
+    <!-- Strip unicode -->
+    <string name="pref_title_strip_unicode">Strip unicode</string>
+    <string name="pref_summary_strip_unicode">Substitute common characters that are not supported in 160 character SMS messages</string>
     <!-- Full timestamps -->
     <string name="pref_title_mms_full_timestamp">Full timestamps</string>
     <string name="pref_summary_mms_full_timestamp">Display both date and time in timestamps</string>

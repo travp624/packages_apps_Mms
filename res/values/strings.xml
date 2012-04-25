@@ -310,6 +310,8 @@
     <string name="pref_sms_settings_title">"Text (SMS) messages"</string>
     <!-- Settings screen, section heading for storage-specific settings -->
     <string name="pref_sms_storage_title">Storage</string>
+    <!-- Settings screen, section heading for display-specific settings -->
+    <string name="pref_display_title">Display</string>
 
     <!-- Settings item description for entering SIM card message screen -->
     <string name="pref_summary_manage_sim_messages">Manage messages stored on your SIM card</string>
@@ -627,6 +629,7 @@
     <string name="saved_ringtone_fail">Couldn\'t save ringtone.</string>
     <!-- Menu item -->
     <string name="menu_insert_smiley">Insert smiley</string>
+    <string name="menu_insert_emoji">Insert emoji</string>
 
     <!-- This is the dialog title for the "Select link" dialog, shown when the user clicks on a
     chat in the chat history view if there are links in the chat message. The dialog displays the
@@ -800,5 +803,11 @@
     <string name="pref_summary_mms_notification_vibrate_call">Allow vibrate while on a call</string>
     <string name="pref_title_mms_notification_vibrate_custom">Custom vibrate pattern</string>
     <string name="pref_text_mms_notification_vibrate_custom">Format off/on in milliseconds: off, on, off, on, ...</string>
+
+    <!-- Enable emojis -->
+    <string name="pref_title_enable_emojis">Enable emojis</string>
+    <string name="pref_summary_enable_emojis">Enable support for softbank unicode emojis, a set of 471 nice emoticons</string>
+    <string name="pref_title_pref_key_emojis_quick">Quick emojis button</string>
+    <string name="pref_summary_pref_key_emojis_quick">Shows a button to the left of text input-area for quick access</string>
 
 </resources>

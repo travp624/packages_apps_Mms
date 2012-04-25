@@ -25,6 +25,7 @@ import com.android.mms.data.Conversation;
 import com.android.mms.layout.LayoutManager;
 import com.android.mms.util.DownloadManager;
 import com.android.mms.util.DraftCache;
+import com.android.mms.util.EmojiParser;
 import com.android.mms.drm.DrmUtils;
 import com.android.mms.util.SmileyParser;
 import com.android.mms.util.RateController;
@@ -63,17 +64,6 @@ public class MmsApp extends Application {
         // Load the default preference values
         PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
 
-        // Figure out the country *before* loading contacts and formatting numbers
-        mCountryDetector = (CountryDetector) getSystemService(Context.COUNTRY_DETECTOR);
-        mCountryListener = new CountryListener() {
-            @Override
-            public synchronized void onCountryDetected(Country country) {
-                mCountryIso = country.getCountryIso();
-            }
-        };
-        mCountryDetector.addCountryListener(mCountryListener, getMainLooper());
-        mCountryIso = mCountryDetector.detectCountry().getCountryIso();
-
         MmsConfig.init(this);
         Contact.init(this);
         DraftCache.init(this);
@@ -83,7 +73,17 @@ public class MmsApp extends Application {
         DrmUtils.cleanupStorage(this);
         LayoutManager.init(this);
         SmileyParser.init(this);
+        EmojiParser.init(this);
         MessagingNotification.init(this);
+        mCountryDetector = (CountryDetector) getSystemService(Context.COUNTRY_DETECTOR);
+        mCountryListener = new CountryListener() {
+            @Override
+            public synchronized void onCountryDetected(Country country) {
+                mCountryIso = country.getCountryIso();
+            }
+        };
+        mCountryDetector.addCountryListener(mCountryListener, getMainLooper());
+        mCountryDetector.detectCountry();
     }
 
     synchronized public static MmsApp getApplication() {
@@ -127,6 +127,6 @@ public class MmsApp extends Application {
     }
 
     public String getCurrentCountryIso() {
-        return mCountryIso;
+        return mCountryIso == null ? Locale.getDefault().getCountry() : mCountryIso;
     }
 }

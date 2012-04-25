@@ -22,6 +22,7 @@ import com.android.mms.MmsConfig;
 import com.android.mms.R;
 
 import android.app.ActionBar;
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
@@ -71,7 +72,9 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     public static final String GESTURE_SENSITIVITY = "pref_key_templates_gestures_sensitivity";
     public static final String GESTURE_SENSITIVITY_VALUE = "pref_key_templates_gestures_sensitivity_value";
     public static final String STRIP_UNICODE            = "pref_key_strip_unicode";
+    public static final String ENABLE_EMOJIS            = "pref_key_enable_emojis";
     public static final String FULL_TIMESTAMP           = "pref_key_mms_full_timestamp";
+    public static final String ENABLE_QUICK_EMOJIS      = "pref_key_emojis_quick";
     public static final String SENT_TIMESTAMP           = "pref_key_mms_use_sent_timestamp";
     public static final String NOTIFICATION_VIBRATE_PATTERN = "pref_key_mms_notification_vibrate_pattern";
     public static final String NOTIFICATION_VIBRATE_PATTERN_CUSTOM = "pref_key_mms_notification_vibrate_pattern_custom";

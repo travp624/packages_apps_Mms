@@ -756,7 +756,8 @@
 
     <!-- Message of the dialog used to disable messaging notifications [CHAR LIMIT=none] -->
     <string name="disable_notifications_dialog_message">Stop duplicate text message notifications from default Messaging app?</string>
-
+    <string name="label_mms_push">MMS Push</string>
+    <string name="desc_mms_push">Pushes MMS from outbox to the network</string>
     <!-- Sms templates -->
     <string name="prefs_templates_settings">Sms templates</string>
     <string name="pref_title_templates_manage">Templates</string>

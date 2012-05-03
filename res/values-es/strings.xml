@@ -173,6 +173,8 @@
     <string name="pref_summary_notification_vibrateWhen" msgid="669655090822561447">"Vibrar también al notificar"</string>
     <string name="pref_title_notification_ringtone" msgid="5467265237106229952">"Seleccionar tono"</string>
     <string name="pref_messages_to_save" msgid="3202539743892934926">"Establece el número de mensajes que quieres guardar"</string>
+    <string name="pref_title_sms_split_counter">"Contador de división"</string>
+    <string name="pref_summary_sms_split_counter">"Añade un contador de división de mensajes. Ej. (1/2)"</string>
   <string-array name="prefEntries_vibrateWhen">
     <item msgid="2520871831815631409">"Siempre"</item>
     <item msgid="6069709696037750627">"Solo en modo silencio"</item>
@@ -283,6 +285,7 @@
     <string name="saved_ringtone" msgid="3847363932276708626">"Tono guardado"</string>
     <string name="saved_ringtone_fail" msgid="4778500070919251116">"No se ha podido guardar el tono."</string>
     <string name="menu_insert_smiley" msgid="4964504393061025071">"Insertar emoticono"</string>
+    <string name="menu_insert_emoji">"Insertar Emoji"</string>
     <string name="select_link_title" msgid="3371818607625768447">"Seleccionar acción"</string>
     <string name="slide_number" msgid="1923958526266726635">"Diapositiva <xliff:g id="NUMBER">%s</xliff:g>"</string>
   <plurals name="slide_duration">
@@ -328,4 +331,55 @@
     <item quantity="other" msgid="7338580381574463136">"<xliff:g id="NUMBER">%1$s</xliff:g> personas"</item>
   </plurals>
     <string name="disable_notifications_dialog_message" msgid="7644011234972074096">"¿Quieres dejar de recibir notificaciones de mensajes de texto duplicadas procedentes de la aplicación Mensajes?"</string>
+
+    <!-- Sms templates -->
+    <string name="prefs_templates_settings">"Plantillas SMS"</string>
+    <string name="pref_title_templates_manage">"Plantillas"</string>
+    <string name="pref_summary_templates_manage">"Administrar plantillas de SMS"</string>
+    <string name="pref_title_templates_show_gesture">"Gestos"</string>
+    <string name="pref_summary_templates_show_gesture">"Habilitar el uso de gestos para acceder a plantillas"</string>
+    <string name="pref_title_template_gestures_sensitivity">"Sensibilidad gestual"</string>
+    <string name="template_save">"Guardar"</string>
+    <string name="template_insert_hint">"Insertar la plantilla de texto aquí"</string>
+    <string name="template_empty_text">"El campo de texto no puede estar vacio"</string>
+    <string name="template_explanation">"Inserte ó modifique el texto de la plantilla y, opcionalmente, dibuje un gesto para asociarlo"</string>
+    <string name="template_edit">"Editar"</string>
+    <string name="template_delete">"Borrar"</string>
+    <string name="template_ctx_menu_title">"Acciones"</string>
+    <string name="template_list_title">"Plantillas"</string>
+    <string name="template_new_title">"Nueva plantilla"</string>
+    <string name="template_insert">"Insertar plantilla"</string>
+    <string name="template_gesture_draw">"Dibuje el gesto en el espacio de abajo"</string>
+    <string name="template_not_present_error">"No ha definido ninguna plantilla"</string>
+    <string name="template_not_present_error_title">"Error"</string>
+    <string name="template_select">"Seleccione una plantilla"</string>
+    <string name="template_cancel_confirm_title">"Aviso"</string>
+    <string name="template_cancel_confirm_text">"Se va a borrar la plantilla. ¿Desea continuar?"</string>
+    <string name="gestures_already_present">"¡Aviso: Un gesto similar ya ha sido asociado a otra plantilla!"</string>
+
+    <!-- Extra Settings: -->
+    <string name="pref_extra_settings">"Configuración adicional"</string>
+
+    <!-- Strip unicode -->
+    <string name="pref_title_strip_unicode">"Limpiar Unicode"</string>
+    <string name="pref_summary_strip_unicode">"Substituir caracteres comunes que no están soportados los 160 caracteres del SMS"</string>
+    <!-- Enable emojis -->
+    <string name="pref_title_enable_emojis">"Habilitar Emoji"</string>
+    <string name="pref_summary_enable_emojis">"Habilitar soporte para Emoji Unicode de SoftBank, una colección de 471 simpáticos emoticonos"</string>
+    <!-- Full timestamps -->
+    <string name="pref_title_mms_full_timestamp">"Marca de tiempo completa"</string>
+    <string name="pref_summary_mms_full_timestamp">"Mostrar fecha y hora en las marcas de tiempo"</string>
+    <!-- Which timestamps -->
+    <string name="pref_title_mms_use_sent_timestamp">"Marca de tiempo original"</string>
+    <string name="pref_summary_mms_use_sent_timestamp">"Mostrar fecha de envío en lugar de la fecha de recepción en las marcas de tiempo"</string>
+
+    <!-- Change Vibrate pattern/method for message notification -->
+    <string name="pref_title_mms_notification_vibrate_settings">"Opciones de Vibración"</string>
+    <string name="pref_title_mms_notification_vibrate_pattern">"Patrón de vibración"</string>
+    <string name="pref_summary_mms_notification_vibrate_pattern">"Cambiar patrón de vibración"</string>
+    <string name="pref_title_mms_notification_vibrate_call">"Vibración durante llamadas"</string>
+    <string name="pref_summary_mms_notification_vibrate_call">"Permitir vibración durante una llamada"</string>
+    <string name="pref_title_mms_notification_vibrate_custom">"Patrón personalizado"</string>
+    <string name="pref_text_mms_notification_vibrate_custom">"Secuencia inactivo/activo en milisegundos: inactivo, activo, inactivo, activo, ..."</string>
+
 </resources>

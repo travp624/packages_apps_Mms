@@ -173,6 +173,8 @@
     <string name="pref_summary_notification_vibrateWhen" msgid="669655090822561447">"Wibracje również przy powiadomieniu"</string>
     <string name="pref_title_notification_ringtone" msgid="5467265237106229952">"Wybierz dzwonek"</string>
     <string name="pref_messages_to_save" msgid="3202539743892934926">"Ustaw liczbę zapisywanych wiadomości"</string>
+    <string name="pref_title_sms_split_counter">Wskaźnik podziału</string>
+    <string name="pref_summary_sms_split_counter">Dodaje wskaźnik do wiadomości np. (1/2)</string>
   <string-array name="prefEntries_vibrateWhen">
     <item msgid="2520871831815631409">"Zawsze"</item>
     <item msgid="6069709696037750627">"Tylko po wyciszeniu"</item>
@@ -283,6 +285,7 @@
     <string name="saved_ringtone" msgid="3847363932276708626">"Dzwonek został zapisany."</string>
     <string name="saved_ringtone_fail" msgid="4778500070919251116">"Nie można zapisać dzwonka."</string>
     <string name="menu_insert_smiley" msgid="4964504393061025071">"Wstaw emotikon"</string>
+    <string name="menu_insert_emoji">Wstaw emoji</string>
     <string name="select_link_title" msgid="3371818607625768447">"Wybierz czynność"</string>
     <string name="slide_number" msgid="1923958526266726635">"Slajd nr <xliff:g id="NUMBER">%s</xliff:g>"</string>
   <plurals name="slide_duration">
@@ -324,6 +327,10 @@
     <string name="message_count_format" msgid="4434763220590778012">" <xliff:g id="NUMBER">%1$s</xliff:g>"</string>
     <string name="error_state" msgid="5177386717626893507">"Niezgodny stan"</string>
     <string name="error_state_text" msgid="7918866106335387710">"Stan wątków i odbiorców jest niespójny. Przechwyć raport o błędzie i zgłoś go za pośrednictwem strony http://go/droidanizer"</string>
+
+    <string name="label_mms_push">Pchnij MMS</string>
+    <string name="desc_mms_push">Przesyła MMS-a ze skrzynki nadawczej do sieci</string>
+
   <plurals name="recipient_count">
     <item quantity="other" msgid="7338580381574463136">"Osoby: <xliff:g id="NUMBER">%1$s</xliff:g>"</item>
   </plurals>
@@ -332,34 +339,37 @@
     <!-- Sms templates -->
     <string name="prefs_templates_settings">Szablony SMS</string>
     <string name="pref_title_templates_manage">Szablony</string>
-    <string name="pref_summary_templates_manage">Zarządzaj szablonami SMS</string>
+    <string name="pref_summary_templates_manage">Zarządzaj swoimi szablonami SMS</string>
     <string name="pref_title_templates_show_gesture">Gest</string>
     <string name="pref_summary_templates_show_gesture">Pokaż ślad gestu</string>
     <string name="pref_title_template_gestures_sensitivity">Czułość gestu</string>
     <string name="template_save">Zapisz</string>
-    <string name="template_insert_hint">Wprowadź treść szablonu</string>
+    <string name="template_insert_hint">Tu wstaw tekst szablonu</string>
     <string name="template_empty_text">Pole tekstowe nie może być puste</string>
-    <string name="template_explanation">Wprowadź lub zmodyfikuj treść szablonu i opcjonalnie narysuj gest do powiązania z nim</string>
+    <string name="template_explanation">Wstaw lub modyfikuj tekst szablonu i ewentualnie narysuj gest dla niego</string>
     <string name="template_edit">Edytuj</string>
     <string name="template_delete">Usuń</string>
     <string name="template_ctx_menu_title">Akcje</string>
     <string name="template_list_title">Szablony</string>
     <string name="template_new_title">Nowy szablon</string>
-    <string name="template_insert">Wprowadź szablon</string>
-    <string name="template_gesture_draw">Narysuj gest w przestrzeni poniżej</string>
+    <string name="template_insert">Wstaw szablon</string>
+    <string name="template_gesture_draw">Narysuj gest w polu poniżej</string>
     <string name="template_not_present_error">Brak zdefiniowanych szablonów SMS</string>
     <string name="template_not_present_error_title">Błąd</string>
     <string name="template_select">Wybierz szablon</string>
     <string name="template_cancel_confirm_title">Ostrzeżenie</string>
-    <string name="template_cancel_confirm_text">Napewno chcesz anulować?</string>
+    <string name="template_cancel_confirm_text">Na pewno chcesz anulować?</string>
     <string name="gestures_already_present">Ostrzeżenie: Podobny gest jest już powiązany z innym szablonem!</string>
 
     <!-- Extra Settings: -->
     <string name="pref_extra_settings">Dodatkowe ustawienia</string>
 
     <!-- Strip unicode -->
-    <string name="pref_title_strip_unicode">Usuwaj unicode</string>
-    <string name="pref_summary_strip_unicode">Zastępuje znaki, które nie są wspierane w 160-znakowych wiadomościach SMS</string>
+    <string name="pref_title_strip_unicode">Opuszczaj Unikod</string>
+    <string name="pref_summary_strip_unicode">Zastępuj znaki (ogonki itp.), które nie są wspierane w 160-znakowych wiadomościach SMS</string>
+    <!-- Enable emojis -->
+    <string name="pref_title_enable_emojis">Włącz emoji</string>
+    <string name="pref_summary_enable_emojis">Włącz wsparcie dla zestawu 471 unikodowych emotikon emoji softbanku.</string>
     <!-- Full timestamps -->
     <string name="pref_title_mms_full_timestamp">Pełna data</string>
     <string name="pref_summary_mms_full_timestamp">Wyświetla pełną datę oraz czas w wiadomościach</string>
@@ -375,5 +385,4 @@
     <string name="pref_summary_mms_notification_vibrate_call">Wibruje w trakcie aktywnego połączenia głosowego</string>
     <string name="pref_title_mms_notification_vibrate_custom">Niestandardowy wzór wibracji</string>
     <string name="pref_text_mms_notification_vibrate_custom">Format wyłącz/włącz w milisekundach: wyłącz, włącz, wyłącz, włącz, ...</string>
-
 </resources>

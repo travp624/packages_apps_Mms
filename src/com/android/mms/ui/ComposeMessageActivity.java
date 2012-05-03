@@ -241,10 +241,11 @@ public class ComposeMessageActivity extends Activity
     private static final int MENU_PREFERENCES           = 31;
 
     private static final int MENU_ADD_TEMPLATE          = 32;
+    private static final int MENU_INSERT_EMOJI         = 33;
 
     private static final int DIALOG_TEMPLATE_SELECT     = 1;
     private static final int DIALOG_TEMPLATE_NOT_AVAILABLE = 2;
-    private static final int MENU_INSERT_EMOJI         = 33;
+
     private static final int LOAD_TEMPLATE_BY_ID        = 0;
     private static final int LOAD_TEMPLATES             = 1;
 
@@ -3290,7 +3291,6 @@ public class ComposeMessageActivity extends Activity
         } else {
             mTextEditor.setText("");
         }
-        
     }
 
     private void drawTopPanel(boolean showSubjectEditor) {

@@ -283,6 +283,7 @@
     <string name="saved_ringtone" msgid="3847363932276708626">"Рингтон сохранен."</string>
     <string name="saved_ringtone_fail" msgid="4778500070919251116">"Рингтон не сохранен."</string>
     <string name="menu_insert_smiley" msgid="4964504393061025071">"Вставить смайлик"</string>
+    <string name="menu_insert_emoji">Вставить emoji</string>
     <string name="select_link_title" msgid="3371818607625768447">"Выбор действия"</string>
     <string name="slide_number" msgid="1923958526266726635">"Слайд <xliff:g id="NUMBER">%s</xliff:g>"</string>
   <plurals name="slide_duration">
@@ -321,9 +322,11 @@
     <string name="pick_too_many_recipients" msgid="650087588867628044">"Слишком много получателей"</string>
     <string name="adding_recipients" msgid="2962810172527532357">"Добавление получателей..."</string>
     <string name="draft_separator" msgid="5402575086540243019">", "</string>
-    <string name="message_count_format" msgid="4434763220590778012">" <xliff:g id="NUMBER">%1$s</xliff:g>"</string>
+    <string name="message_count_format" msgid="4434763220590778012">" <xliff:g id="NUMBER">%1$s</xliff:g>"</string>
     <string name="error_state" msgid="5177386717626893507">"Данные были изменены"</string>
     <string name="error_state_text" msgid="7918866106335387710">"Цепочки не соответствуют получателям. Сделайте снимок экрана и отправьте сообщение об ошибке через веб-сайт http://go/droidanizer"</string>
+    <string name="label_mms_push">Передача MMS</string>
+    <string name="desc_mms_push">Передавать MMS из исходящих в сеть</string>
   <plurals name="recipient_count">
     <item quantity="other" msgid="7338580381574463136">"<xliff:g id="NUMBER">%1$s</xliff:g> чел."</item>
   </plurals>
@@ -360,7 +363,9 @@
     <!-- Strip unicode -->
     <string name="pref_title_strip_unicode">Раскрывать юникод</string>
     <string name="pref_summary_strip_unicode">Замена не поддерживаемых символов в сообщении обычными</string>
-
+    <!-- Enable emojis -->
+    <string name="pref_title_enable_emojis">Включить emojis</string>
+    <string name="pref_summary_enable_emojis">Включить поддержку emojis, набора из 471 отличных юникод смайликов</string>
     <!-- Full timestamps -->
     <string name="pref_title_mms_full_timestamp">Полная метка времени</string>
     <string name="pref_summary_mms_full_timestamp">Включение отображения полной даты и времени в сообщениях</string>

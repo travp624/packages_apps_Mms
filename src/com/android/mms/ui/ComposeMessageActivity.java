@@ -380,6 +380,8 @@ public class ComposeMessageActivity extends Activity
                     // above technique.
                     s = s.replace("Œ", "OE");
                     s = s.replace("œ", "oe");
+                    s = s.replace("Ł", "L");
+                    s = s.replace("ł", "l");
 
                     output.append(s);
                 }
@@ -3277,6 +3279,8 @@ public class ComposeMessageActivity extends Activity
         // TextView.setTextKeepState() doesn't like null input.
         if (text != null) {
             // Restore the emojis if necessary
+            SharedPreferences prefs = PreferenceManager
+                    .getDefaultSharedPreferences((Context) ComposeMessageActivity.this);
             boolean enableEmojis = prefs.getBoolean(MessagingPreferenceActivity.ENABLE_EMOJIS, false);
             if (enableEmojis) {
                 mTextEditor.setTextKeepState(EmojiParser.getInstance().addSmileySpans(text));
@@ -3285,16 +3289,6 @@ public class ComposeMessageActivity extends Activity
             }
         } else {
             mTextEditor.setText("");
-        }
-        if(prefs.getBoolean(MessagingPreferenceActivity.ENABLE_QUICK_EMOJIS, false)) {
-            ImageButton quickEmojis = (ImageButton) mBottomPanel.findViewById(R.id.add_emoji);
-            quickEmojis.setVisibility(View.VISIBLE);
-            quickEmojis.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    showEmojiDialog();
-                }
-            });
         }
         
     }

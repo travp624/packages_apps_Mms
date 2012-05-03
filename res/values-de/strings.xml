@@ -328,4 +328,57 @@
     <item quantity="other" msgid="7338580381574463136">"<xliff:g id="NUMBER">%1$s</xliff:g> Personen"</item>
   </plurals>
     <string name="disable_notifications_dialog_message" msgid="7644011234972074096">"Doppelte SMS-Benachrichtigungen der standardmäßigen SMS/MMS-App stoppen?"</string>
+
+    <!-- additional CyanogenMod features -->
+    <!-- Settings item for boolean option for SMS Split Counter -->
+    <string name="pref_title_sms_split_counter">Zähler für Aufteilung</string>
+
+    <!-- Settings item description for boolean SMS Split 160 characters setting -->
+    <string name="pref_summary_sms_split_counter">Der Nachricht einen Zähler anhängen, zB. (1/2)</string>
+
+    <!-- Extra Settings: -->
+    <string name="pref_extra_settings">Weitere Einstellungen</string>
+
+    <!-- Full timestamps -->
+    <string name="pref_title_mms_full_timestamp">Volle Datumsangabe</string>
+    <string name="pref_summary_mms_full_timestamp">Datum und Zeit der Nachricht anzeigen</string>
+
+    <!-- Which timestamps -->
+    <string name="pref_title_mms_use_sent_timestamp">Originale Datumsangabe</string>
+    <string name="pref_summary_mms_use_sent_timestamp">Statt Empfangszeitpunkt den Sendezeitpunkt der Nachricht anzeigen und speichern</string>
+
+    <!-- Change Vibrate pattern/method for message notification -->
+    <string name="pref_title_mms_notification_vibrate_settings">Vibrationseinstellungen</string>
+    <string name="pref_title_mms_notification_vibrate_pattern">Vibrationsmuster</string>
+    <string name="pref_summary_mms_notification_vibrate_pattern">Vibrationsmuster ändern</string>
+    <string name="pref_title_mms_notification_vibrate_call">Vibrieren bei Anruf</string>
+    <string name="pref_summary_mms_notification_vibrate_call">Vibrieren während eines Anrufs erlauben</string>
+    <string name="pref_title_mms_notification_vibrate_custom">Anderes Vibrationsmuster</string>
+    <string name="pref_text_mms_notification_vibrate_custom">Format aus/an in Millisekunden: aus, an, aus, an, ...</string>
+
+    <!-- Sms templates -->
+    <string name="prefs_templates_settings">SMS-Vorlagen</string>
+    <string name="pref_title_templates_manage">Vorlagen</string>
+    <string name="pref_summary_templates_manage">SMS-Vorlagen verwalten</string>
+    <string name="pref_title_templates_show_gesture">Geste</string>
+    <string name="pref_summary_templates_show_gesture">Zeige Spur der Geste</string>
+    <string name="pref_title_template_gestures_sensitivity">Empfindlichkeit der Geste</string>
+    <string name="template_save">Speichern</string>
+    <string name="template_insert_hint">Hier den Vorlagentext eingeben</string>
+    <string name="template_empty_text">Textfeld darf nicht leer sein</string>
+    <string name="template_explanation">Vorlagentext eingeben oder bearbeiten und wahlweise eine Geste zeichnen und zuordnen</string>
+    <string name="template_edit">Bearbeiten</string>
+    <string name="template_delete">Löschen</string>
+    <string name="template_ctx_menu_title">Aktionen</string>
+    <string name="template_list_title">Vorlagen</string>
+    <string name="template_edit_title">Vorlage bearbeiten</string>
+    <string name="template_new_title">Neue Vorlage</string>
+    <string name="template_insert">Vorlage einfügen</string>
+    <string name="template_insert_ctx_menu_title">Text bearbeiten</string>
+    <string name="template_gesture_draw">Geste im unteren Feld zeichnen</string>
+    <string name="template_not_present_error">Es ist keine Vorlage definiert</string>
+    <string name="template_not_present_error_title">Fehler</string>
+    <string name="template_select">Vorlage auswählen</string>
+    <string name="template_cancel_confirm_title">Warnung</string>
+    <string name="template_cancel_confirm_text">Diese Aktion abbrechen?</string>
 </resources>

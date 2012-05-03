@@ -357,6 +357,10 @@
     <!-- Extra Settings: -->
     <string name="pref_extra_settings">Доп. настройки</string>
 
+    <!-- Strip unicode -->
+    <string name="pref_title_strip_unicode">Раскрывать юникод</string>
+    <string name="pref_summary_strip_unicode">Замена не поддерживаемых символов в сообщении обычными</string>
+
     <!-- Full timestamps -->
     <string name="pref_title_mms_full_timestamp">Полная метка времени</string>
     <string name="pref_summary_mms_full_timestamp">Включение отображения полной даты и времени в сообщениях</string>

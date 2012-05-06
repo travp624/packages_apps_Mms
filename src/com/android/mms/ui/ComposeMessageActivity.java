@@ -4150,6 +4150,7 @@ public class ComposeMessageActivity extends Activity
             if (prediction.score > mGestureSensitivity) {
                 Bundle b = new Bundle();
                 b.putLong("id", Long.parseLong(prediction.name));
+                getLoaderManager().destroyLoader(LOAD_TEMPLATE_BY_ID);
                 getLoaderManager().initLoader(LOAD_TEMPLATE_BY_ID, b, this);
             }
         }

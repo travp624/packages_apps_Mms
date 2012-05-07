@@ -394,9 +394,9 @@ public class MessageListItem extends LinearLayout implements
         SmileyParser parser = SmileyParser.getInstance();
         if (hasSubject) {
             CharSequence smilizedSubject = parser.addSmileySpans(subject);
-            if (enalbeEmojis) {
+            if (enableEmojis) {
                 EmojiParser emojiParser = EmojiParser.getInstance();
-                CharSequence emojizedSubject = emojiParser.addSmileySpans(smilizedSubject);
+                smilizedSubject = emojiParser.addEmojiSpans(smilizedSubject);
             }
             // Can't use the normal getString() with extra arguments for string replacement
             // because it doesn't preserve the SpannableText returned by addSmileySpans.

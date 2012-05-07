@@ -629,7 +629,7 @@
     <string name="saved_ringtone_fail">Couldn\'t save ringtone.</string>
     <!-- Menu item -->
     <string name="menu_insert_smiley">Insert smiley</string>
-    <string name="menu_insert_emoji">Insert emoji</string>
+    <string name="menu_insert_emoji">Insert emojis</string>
 
     <!-- This is the dialog title for the "Select link" dialog, shown when the user clicks on a
     chat in the chat history view if there are links in the chat message. The dialog displays the
@@ -792,8 +792,8 @@
     <string name="pref_title_strip_unicode">Strip unicode</string>
     <string name="pref_summary_strip_unicode">Substitute common characters that are not supported in 160 character SMS messages</string>
     <!-- Enable emojis -->
-    <string name="pref_title_enable_emojis">Enable emojis</string>
-    <string name="pref_summary_enable_emojis">Enable support for softbank unicode emojis, a set of 471 nice emoticons</string>
+    <string name="pref_title_enable_emojis">Emojis support</string>
+    <string name="pref_summary_enable_emojis">Enable support for unicode emojis, a set of 471 nice emoticons</string>
     <!-- Full timestamps -->
     <string name="pref_title_mms_full_timestamp">Full timestamps</string>
     <string name="pref_summary_mms_full_timestamp">Display both date and time in timestamps</string>

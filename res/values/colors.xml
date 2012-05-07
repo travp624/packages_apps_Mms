@@ -25,7 +25,7 @@
     <drawable name="text_color_red">#ffff4444</drawable>
     <drawable name="text_color_black">#ff000000</drawable>
     <drawable name="text_color_offwhite">#55ffffff</drawable>
-    <drawable name="text_color_blue">#cc33b5e5</drawable>
+    <drawable name="text_color_blue">@android:color/holo_blue_dark</drawable>
     <color name="text_hairline">#ffafafaf</color>
     <color name="list_background">#ff000000</color>
     <color name="message_count_color">#66cfcfcf</color>

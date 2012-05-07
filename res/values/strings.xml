@@ -778,11 +778,11 @@
     <string name="template_new_title">New template</string>
     <string name="template_insert">Insert template</string>
     <string name="template_gesture_draw">Draw the gesture in the space below</string>
-    <string name="template_not_present_error">You have not defined any template</string>
+    <string name="template_not_present_error">There are no defined templates</string>
     <string name="template_not_present_error_title">Error</string>
     <string name="template_select">Select a template</string>
     <string name="template_cancel_confirm_title">Warning</string>
-    <string name="template_cancel_confirm_text">Would you like to cancel?</string>
+    <string name="template_cancel_confirm_text">The template will be deleted. Continue?</string>
     <string name="gestures_already_present">Warning: A similar gesture is associated to another template!</string>
 
     <!-- Extra Settings: -->

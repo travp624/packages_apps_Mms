@@ -181,6 +181,18 @@
             android:title="@string/pref_title_mms_notification_vibrate_call"
             android:summary="@string/pref_summary_mms_notification_vibrate_call" />
 
+        <CheckBoxPreference
+            android:key="pref_key_notification_hidesendername"
+            android:defaultValue="false"
+            android:title="@string/pref_title_hidesendername"
+            android:summary="@string/pref_summary_hidesendername" />
+
+        <CheckBoxPreference
+            android:key="pref_key_notification_hidemessage"
+            android:defaultValue="false"
+            android:title="@string/pref_title_hidemessage"
+            android:summary="@string/pref_summary_hidemessage" />
+
 	</PreferenceCategory>
 
 	<PreferenceCategory 

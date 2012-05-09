@@ -78,6 +78,8 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     public static final String NOTIFICATION_VIBRATE_PATTERN = "pref_key_mms_notification_vibrate_pattern";
     public static final String NOTIFICATION_VIBRATE_PATTERN_CUSTOM = "pref_key_mms_notification_vibrate_pattern_custom";
     public static final String NOTIFICATION_VIBRATE_CALL ="pre_key_mms_notification_vibrate_call";
+    public static final String DISPLAY_HIDESENDERNAME   = "pref_key_notification_hidesendername";
+    public static final String DISPLAY_HIDEMESSAGE      = "pref_key_notification_hidemessage";
 
     // Menu entries
     private static final int MENU_RESTORE_DEFAULTS    = 1;
@@ -386,5 +388,19 @@ public class MessagingPreferenceActivity extends PreferenceActivity
             }
         }
         mVibrateWhenPref.setSummary(null);
+    }
+
+    public static boolean getHideSenderNameEnabled(Context context) {
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+        boolean hideSenderName =
+            prefs.getBoolean(MessagingPreferenceActivity.DISPLAY_HIDESENDERNAME, false);
+        return hideSenderName;
+    }
+
+    public static boolean getHideMessageEnabled(Context context) {
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+        boolean hideMessageEnabled =
+            prefs.getBoolean(MessagingPreferenceActivity.DISPLAY_HIDEMESSAGE, false);
+        return hideMessageEnabled;
     }
 }

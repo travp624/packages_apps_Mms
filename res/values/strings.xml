@@ -377,14 +377,14 @@
     <!-- Settings item for boolean option to show the sender's name -->
     <string name="pref_title_hidesendername">Hide sender\'s name</string>
     <!-- Settings item description for boolean full message setting -->
-    <string name="pref_summary_hidesendername">Hide the sender\'s name in notification. Will display as \"Someone\" instead.</string>
+    <string name="pref_summary_hidesendername">Hide the sender\'s name in notification. Will display as \"Message received\" instead.</string>
     <!-- Settings item for boolean option to show the full datetime -->
     <string name="pref_title_hidemessage">Hide full message</string>
     <!-- Settings item description for boolean full message setting -->
-    <string name="pref_summary_hidemessage">Hide the full message body in notification. Will display as \"New Message\" instead.</string>
+    <string name="pref_summary_hidemessage">Hide the full message body in notification. Will display as \"New message\" instead.</string>
     <!-- The actual strings that will display if privacy is enabled -->
-    <string name="hidden_sender">Recieved</string>
-    <string name="hidden_message_body">New Message</string>
+    <string name="hidden_sender">Message received</string>
+    <string name="hidden_message_body">New message</string>
 
     <!-- The vibrateWhen values -->
     <string-array translatable="false" name="prefValues_vibrateWhen">

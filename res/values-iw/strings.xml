@@ -20,7 +20,7 @@
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_label" msgid="1503967887341230795">"סמס"</string>
+    <string name="app_label" msgid="1503967887341230795">"הודעות"</string>
     <string name="new_message" msgid="1530369762346003973">"הודעה חדשה"</string>
     <string name="menu_call_back" msgid="7538482331117914146">"התקשר אל <xliff:g id="NAME">%s</xliff:g>"</string>
     <string name="menu_send_email" msgid="671366308915241664">"שלח דוא\"ל אל <xliff:g id="NAME">%s</xliff:g>"</string>
@@ -328,4 +328,48 @@
     <item quantity="other" msgid="7338580381574463136">"<xliff:g id="NUMBER">%1$s</xliff:g> אנשים"</item>
   </plurals>
     <string name="disable_notifications_dialog_message" msgid="7644011234972074096">"האם להפסיק התראות כפולות על הודעות טקסט ביישום העברת ההודעות המוגדר כברירת מחדל?"</string>
+    <string name="pref_text_mms_notification_vibrate_custom">"פירמוט הפעלה\כיבוי באלפיות שניה: מכובה, דלוק, מכובה, דלוק..."</string>
+    <string name="pref_summary_mms_notification_vibrate_call">"אפשר רטט בזמן שיחה"</string>
+    <string name="pref_summary_mms_notification_vibrate_pattern">"שנה תבנית רטט"</string>
+    <string name="pref_title_mms_notification_vibrate_call">"רטט בזמן צלצול"</string>
+    <string name="pref_title_mms_notification_vibrate_settings">"הגדרות רטט"</string>
+    <string name="pref_title_mms_notification_vibrate_pattern">"תבנית רטט"</string>
+    <string name="pref_title_mms_use_sent_timestamp">"חותמות זמן מקוריות"</string>
+    <string name="pref_summary_mms_use_sent_timestamp">"הצג מידע שנשלח במקום מידע שהתקבל בחותמות זמן"</string>
+    <string name="pref_title_mms_full_timestamp">"חותמות זמן מלאות"</string>
+    <string name="pref_summary_mms_full_timestamp">"הצג זמן ותאריך בחותמות זמן"</string>
+    <string name="pref_title_enable_emojis">"שימוש בסמיילים נוספים"</string>
+    <string name="pref_summary_enable_emojis">"אפשר שימוש בסמיילים נוספים, סט של 471 סמיילים חמודים"</string>
+    <string name="pref_title_strip_unicode">"בטל Unicode"</string>
+    <string name="pref_summary_strip_unicode">"החלף תווים מוכרות שלא נתמכות בהודעות בעלות 160 תווים"</string>
+    <string name="gestures_already_present">"אזהרה: מחווה דומה כבר בשימוש בתבנית אחרת!"</string>
+    <string name="pref_extra_settings">"הגדרות נוספות"</string>
+    <string name="template_cancel_confirm_title">"אזהרה"</string>
+    <string name="template_cancel_confirm_text">"התבנית תמחק. האם להמשיך?"</string>
+    <string name="template_not_present_error_title">"שגיאה"</string>
+    <string name="template_select">"בחר תבנית"</string>
+    <string name="template_gesture_draw">"צייר את המחווה במקום מטה"</string>
+    <string name="template_not_present_error">"אין תבניות מוגדרות"</string>
+    <string name="template_new_title">"תבנית חדשה"</string>
+    <string name="template_insert">"הכנס תבנית"</string>
+    <string name="template_ctx_menu_title">"פעולות"</string>
+    <string name="template_list_title">"תבניות"</string>
+    <string name="template_edit">"ערוך"</string>
+    <string name="template_delete">"מחק"</string>
+    <string name="template_empty_text">"שדה הטקסט לא יכול להיות ריק"</string>
+    <string name="template_explanation">"הכנס או שנה תבנית טקסט ותוכל לצייר מחווה שתשויך לה"</string>
+    <string name="template_save">"שמור"</string>
+    <string name="template_insert_hint">"הכנס כאן את תבנית הטקסט"</string>
+    <string name="pref_summary_templates_show_gesture">"הצג עקבות של מחוות"</string>
+    <string name="pref_title_template_gestures_sensitivity">"רגישות המחוות"</string>
+    <string name="pref_summary_templates_manage">"ערוך את תבניות ההודעות שלך"</string>
+    <string name="pref_title_templates_show_gesture">"מחווה"</string>
+    <string name="prefs_templates_settings">"תבניות של הודעות"</string>
+    <string name="pref_title_templates_manage">"תבניות"</string>
+    <string name="label_mms_push">"דחיפת הודעת מולטימדיה"</string>
+    <string name="pref_title_sms_split_counter">"פצל מונה"</string>
+    <string name="pref_title_mms_notification_vibrate_custom">"תבנית רטט מותאמת"</string>
+    <string name="menu_insert_emoji">"הכנס סמיילים נוספים"</string>
+    <string name="desc_mms_push">"דוחף הודעות מולטימדיה מהודעות יוצאות אל הרשת"</string>
+    <string name="pref_summary_sms_split_counter">"מוסיף מונה להודעה למשל (1/2)"</string>
 </resources>

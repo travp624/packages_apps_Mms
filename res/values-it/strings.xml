@@ -359,8 +359,8 @@
     <string name="pref_extra_settings">Impostazioni aggiuntive</string>
     <string name="pref_title_strip_unicode">Sostituisci unicode</string>
     <string name="pref_summary_strip_unicode">Sostituisci i caratteri comuni non supportati negli SMS di 160 caratteri</string>
-    <string name="pref_title_enable_emojis">Abilita emojis</string>
-    <string name="pref_summary_enable_emojis">Abilita supporto per le emojis unicode di softbank, una serie di 471 emoticons</string>
+    <string name="pref_title_enable_emojis">Abilita emoji</string>
+    <string name="pref_summary_enable_emojis">Abilita supporto per le emoji in unicode, una serie di 471 emoticons</string>
     <string name="pref_title_mms_full_timestamp">Timestamp completi</string>
     <string name="pref_summary_mms_full_timestamp">Visualizza data e ora nei timestamp</string>
     <string name="pref_title_mms_use_sent_timestamp">Timestamp originali</string>
@@ -372,5 +372,9 @@
     <string name="pref_summary_mms_notification_vibrate_call">Permetti la vibrazione durante una chiamata</string>
     <string name="pref_title_mms_notification_vibrate_custom">Schema di vibrazione personalizzato</string>
     <string name="pref_text_mms_notification_vibrate_custom">Formatta off/on in millisecondi: off, on, off, on, ...</string>
+    <string name="pref_title_sms_EnableMultipartSMS">"Da SMS a MMS"</string>
+    <string name="pref_summary_sms_EnableMultipartSMS">"Trasforma lunghi messaggi di testo in MMS"</string>
+    <string name="pref_title_sms_SmsToMmsTextThreshold">"Contatore SMS"</string>
+    <string name="pref_summary_sms_SmsToMmsTextThreshold">"<xliff:g id="COUNT">%1$s</xliff:g> messaggi prima della conversione in MMS"</string>
 
 </resources>

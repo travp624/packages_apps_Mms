@@ -24,7 +24,9 @@ import org.xmlpull.v1.XmlPullParserException;
 import com.android.internal.telephony.TelephonyProperties;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.content.res.XmlResourceParser;
+import android.preference.PreferenceManager;
 import android.util.Log;
 
 public class MmsConfig {
@@ -65,6 +67,8 @@ public class MmsConfig {
 
     // See the comment below for mEnableMultipartSMS.
     private static int mSmsToMmsTextThreshold = 4;
+    private static int mSmsToMmsTextThresholdMin = 1;            // default value
+    private static int mSmsToMmsTextThresholdMax = 100;          // default value
 
     // This flag is somewhat confusing. If mEnableMultipartSMS is true, long sms messages are
     // always sent as multi-part sms messages, with no checked limit on the number of segments.
@@ -114,6 +118,15 @@ public class MmsConfig {
 
     public static int getSmsToMmsTextThreshold() {
         return mSmsToMmsTextThreshold;
+    }
+    public static void setSmsToMmsTextThreshold(int threshold) {
+        mSmsToMmsTextThreshold = threshold;
+    }
+    public static int getSmsToMmsTextThresholdMin() {
+        return mSmsToMmsTextThresholdMin;
+    }
+    public static int getSmsToMmsTextThresholdMax() {
+        return mSmsToMmsTextThresholdMax;
     }
 
     public static boolean getMmsEnabled() {
@@ -202,6 +215,9 @@ public class MmsConfig {
 
     public static boolean getMultipartSmsEnabled() {
         return mEnableMultipartSMS;
+    }
+    public static void setEnableMultipartSMS(boolean enable) {
+        mEnableMultipartSMS = enable;
     }
 
     public static boolean getSplitSmsEnabled() {
@@ -384,6 +400,10 @@ public class MmsConfig {
                     }
                 }
             }
+            SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+            //as the checkbox is checked when the boolean is supposed to be false, double negation :
+            mEnableMultipartSMS = !prefs.getBoolean("pref_key_sms_EnableMultipartSMS", !getMultipartSmsEnabled());
+            mSmsToMmsTextThreshold = prefs.getInt("pref_key_sms_SmsToMmsTextThreshold", getSmsToMmsTextThreshold());
         } catch (XmlPullParserException e) {
             Log.e(TAG, "loadMmsSettings caught ", e);
         } catch (NumberFormatException e) {

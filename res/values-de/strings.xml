@@ -381,4 +381,8 @@
     <string name="template_select">Vorlage auswählen</string>
     <string name="template_cancel_confirm_title">Warnung</string>
     <string name="template_cancel_confirm_text">Diese Aktion abbrechen?</string>
+    <string name="pref_title_sms_EnableMultipartSMS">"SMS zu MMS"</string>
+    <string name="pref_summary_sms_EnableMultipartSMS">"wandelt lange SMS-Nachricht in MMS um"</string>
+    <string name="pref_title_sms_SmsToMmsTextThreshold">"SMS Anzahl"</string>
+    <string name="pref_summary_sms_SmsToMmsTextThreshold">"<xliff:g id="COUNT">%1$s</xliff:g>SMS bevor in MMS umgewandelt wird"</string>
 </resources>

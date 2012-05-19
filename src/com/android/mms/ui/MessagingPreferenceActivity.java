@@ -92,6 +92,8 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     private Preference mMmsReadReportPref;
     private Preference mManageSimPref;
     private Preference mClearHistoryPref;
+    private CheckBoxPreference mEnableMultipartSMS;
+    private Preference mSmsToMmsTextThreshold;
     private ListPreference mVibrateWhenPref;
     private CheckBoxPreference mEnableNotificationsPref;
     private Recycler mSmsRecycler;
@@ -119,6 +121,9 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         mVibrateWhenPref = (ListPreference) findPreference(NOTIFICATION_VIBRATE_WHEN);
         mManageTemplate = findPreference(MANAGE_TEMPLATES);
         mGestureSensitivity = (ListPreference) findPreference(GESTURE_SENSITIVITY);
+
+        mEnableMultipartSMS = (CheckBoxPreference)findPreference("pref_key_sms_EnableMultipartSMS");
+        mSmsToMmsTextThreshold = findPreference("pref_key_sms_SmsToMmsTextThreshold");
 
         mVibrateEntries = getResources().getTextArray(R.array.prefEntries_vibrateWhen);
         mVibrateValues = getResources().getTextArray(R.array.prefValues_vibrateWhen);
@@ -181,6 +186,9 @@ public class MessagingPreferenceActivity extends PreferenceActivity
             }
         }
 
+        mEnableMultipartSMS.setChecked(!MmsConfig.getMultipartSmsEnabled());
+        mSmsToMmsTextThreshold.setDefaultValue(MmsConfig.getSmsToMmsTextThreshold()-1);
+
         setEnabledNotificationsPref();
 
         // If needed, migrate vibration setting from a previous version
@@ -226,6 +234,9 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         setSmsDisplayLimit();
         setMmsDisplayLimit();
 
+        // Fix up the sms to mms treshold
+        setSmsToMmsTextThreshold();
+
         adjustVibrateSummary(mVibrateWhenPref.getValue());
     }
 
@@ -245,6 +256,12 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         mMmsLimitPref.setSummary(
                 getString(R.string.pref_summary_delete_limit,
                         mMmsRecycler.getMessageLimit(this)));
+    }
+
+    private void setSmsToMmsTextThreshold() {
+        mSmsToMmsTextThreshold.setSummary(
+                getString(R.string.pref_summary_sms_SmsToMmsTextThreshold,
+                        MmsConfig.getSmsToMmsTextThreshold()-1));
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -287,6 +304,13 @@ public class MessagingPreferenceActivity extends PreferenceActivity
                     mMmsRecycler.getMessageMinLimit(),
                     mMmsRecycler.getMessageMaxLimit(),
                     R.string.pref_title_mms_delete).show();
+        } else if (preference == mSmsToMmsTextThreshold) {
+            new NumberPickerDialog(this,
+                    mSmsToMmsTextThresholdListener,
+                    MmsConfig.getSmsToMmsTextThreshold()-1,
+                    MmsConfig.getSmsToMmsTextThresholdMin()-1,
+                    MmsConfig.getSmsToMmsTextThresholdMax()-1,
+                    R.string.pref_title_sms_SmsToMmsTextThreshold).show();
         } else if (preference == mManageSimPref) {
             startActivity(new Intent(this, ManageSimMessages.class));
         } else if (preference == mClearHistoryPref) {
@@ -295,6 +319,9 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         } else if (preference == mEnableNotificationsPref) {
             // Update the actual "enable notifications" value that is stored in secure settings.
             enableNotifications(mEnableNotificationsPref.isChecked(), this);
+        } else if (preference == mEnableMultipartSMS) {
+            //should be false when the checkbox is checked
+            MmsConfig.setEnableMultipartSMS(!mEnableMultipartSMS.isChecked());
         }
 
         return super.onPreferenceTreeClick(preferenceScreen, preference);
@@ -324,6 +351,18 @@ public class MessagingPreferenceActivity extends PreferenceActivity
                 setMmsDisplayLimit();
             }
     };
+
+    NumberPickerDialog.OnNumberSetListener mSmsToMmsTextThresholdListener =
+            new NumberPickerDialog.OnNumberSetListener() {
+                public void onNumberSet(int limit) {
+                    SharedPreferences.Editor editPrefs =
+                            PreferenceManager.getDefaultSharedPreferences(MessagingPreferenceActivity.this).edit();
+                    editPrefs.putInt("pref_key_sms_SmsToMmsTextThreshold", limit);
+                    editPrefs.apply();
+                    MmsConfig.setSmsToMmsTextThreshold(limit+1);
+                    setSmsToMmsTextThreshold();
+                }
+        };
 
     @Override
     protected Dialog onCreateDialog(int id) {

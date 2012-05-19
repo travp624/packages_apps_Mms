@@ -46,6 +46,16 @@
             android:dependency="pref_key_strip_unicode"
             android:defaultValue="false" />
 
+        <CheckBoxPreference android:key="pref_key_sms_EnableMultipartSMS"
+            android:title="@string/pref_title_sms_EnableMultipartSMS"
+            android:summary="@string/pref_summary_sms_EnableMultipartSMS"
+            android:defaultValue="true" />
+
+        <Preference android:key="pref_key_sms_SmsToMmsTextThreshold"
+            android:dependency="pref_key_sms_EnableMultipartSMS"
+            android:summary="@string/pref_summary_sms_SmsToMmsTextThreshold"
+            android:title="@string/pref_title_sms_SmsToMmsTextThreshold" />
+
 	</PreferenceCategory>
  
 	<PreferenceCategory 

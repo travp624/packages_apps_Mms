@@ -328,4 +328,9 @@
     <item quantity="other" msgid="7338580381574463136">"<xliff:g id="NUMBER">%1$s</xliff:g> personer"</item>
   </plurals>
     <string name="disable_notifications_dialog_message" msgid="7644011234972074096">"Vill du sluta kopiera meddelanden om SMS från standardappen Meddelanden?"</string>
+
+    <string name="pref_title_sms_EnableMultipartSMS">"SMS till MMS"</string>
+    <string name="pref_summary_sms_EnableMultipartSMS">"Konvertera långa SMS till MMS"</string>
+    <string name="pref_title_sms_SmsToMmsTextThreshold">"Antal SMS"</string>
+    <string name="pref_summary_sms_SmsToMmsTextThreshold">"<xliff:g id="COUNT">%1$s</xliff:g> SMS kvar innan MMS-konvertering"</string>
 </resources>

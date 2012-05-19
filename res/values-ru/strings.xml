@@ -382,4 +382,8 @@
     <string name="pref_title_mms_notification_vibrate_custom">Пользоват. режим вибрации</string>
     <string name="pref_text_mms_notification_vibrate_custom">Формат выкл/вкл в миллисекундах: выкл, вкл, выкл, вкл, \u2026</string>
 
+    <string name="pref_title_sms_EnableMultipartSMS">SMS в MMS</string>
+    <string name="pref_summary_sms_EnableMultipartSMS">Преобразовывать длинные текстовые сообщения в MMS</string>
+    <string name="pref_title_sms_SmsToMmsTextThreshold">Кол-во SMS</string>
+    <string name="pref_summary_sms_SmsToMmsTextThreshold"><xliff:g id="COUNT">%1$s</xliff:g> сообщения до преобразования в MMS</string>
 </resources>

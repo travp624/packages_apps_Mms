@@ -70,7 +70,7 @@
     <string name="remove_music" msgid="858889733416015223">"Odstranit hudbu"</string>
     <string name="add_video" msgid="7816866867806595144">"Přidat video"</string>
     <string name="remove_video" msgid="5258603891528497799">"Odstranit video"</string>
-    <string name="to_hint" msgid="224029549150332986">"Komu"</string>
+    <string name="to_hint" msgid="224029549150332986">"Do"</string>
     <string name="subject_hint" msgid="4296714962311604126">"Předmět"</string>
     <string name="add_attachment" msgid="7103751293360532684">"Připojit přílohu"</string>
     <string name="add_subject" msgid="7616134948428265870">"Přidat předmět"</string>
@@ -328,4 +328,27 @@
     <item quantity="other" msgid="7338580381574463136">"Počet lidí: <xliff:g id="NUMBER">%1$s</xliff:g>"</item>
   </plurals>
     <string name="disable_notifications_dialog_message" msgid="7644011234972074096">"Zastavit duplicitní oznámení o textových zprávách z výchozí aplikace SMS a MMS?"</string>
+    
+  <!-- AOKP specific Settings -->
+    <string name="pref_display_title">Zobrazení</string>
+    <string name="pref_title_sms_split_160">Rozdělit SMS</string>
+    <string name="pref_summary_sms_split_160">Rozdělit zprávy po 160 znacích</string>
+    <string name="pref_title_sms_split_counter">Počítadlo rozdělení</string>
+    <string name="pref_summary_sms_split_counter">Přidat počítadlo do zprávy např. (1/2)</string>
+    <!-- Settings item for boolean option to show the full datetime -->
+    <string name="pref_title_fulldate">Zobrazit celé datum</string>
+    <!-- Settings item description for boolean full datetime setting -->
+    <string name="pref_summary_fulldate">Zobrazit celé datum u zpráv</string>
+
+  <!-- Extra Settings: -->
+    <string name="pref_extra_settings">Speciální nastavení</string>
+  <!-- Strip unicode -->
+    <string name="pref_title_strip_unicode">Odstranit speciální znaky</string>
+    <string name="pref_summary_strip_unicode">Nahradí speciální znaky klasickými písmeny pro zachování 160 znaků dlouhých zpráv</string>
+  <!-- Enable emojis -->
+    <string name="pref_title_enable_emojis">Zapnout smajlíky</string>
+    <string name="pref_summary_enable_emojis">Zapnout podporu speciálních 471 unikodových smajlíků</string>
+    <string name="pref_title_pref_key_emojis_quick">Tlačítko smajlíků</string>
+    <string name="pref_summary_pref_key_emojis_quick">Zobrazit tlačítko smajlíků vlevo od textového pole</string>
+    <string name="menu_insert_emoji">Vložit smajlíky</string>
 </resources>

@@ -3337,23 +3337,23 @@ public class ComposeMessageActivity extends Activity
     }
 
     public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-        int i;
+        int i;  
         if (event != null)
         if ((event.getKeyCode() == 23) || (event.getKeyCode() == 66))
         i = 0;
         while (true) {
-            return i;
-            if (!event.isShiftPressed()) {
+            return (i !=0);
+                if (!event.isShiftPressed()) {
                 if (isPreparedForSending())
                 confirmSendMessageIfNeeded();
                 i = 1;
                 continue;
             }
-        i = 0;
-        continue;
-        if (isPreparedForSending())
-        confirmSendMessageIfNeeded();
-        i = 1;
+            i = 0;
+            continue;
+            if (isPreparedForSending())
+            confirmSendMessageIfNeeded();
+            i = 1;
         }
     }
 

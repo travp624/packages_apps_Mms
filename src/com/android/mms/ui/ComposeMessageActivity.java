@@ -3337,22 +3337,24 @@ public class ComposeMessageActivity extends Activity
     }
 
     public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-        if (event != null) {
-            // if shift key is down, then we want to insert the '\n' char in the TextView;
-            // otherwise, the default action is to send the message.
+        int i;
+        if (event != null)
+        if ((event.getKeyCode() == 23) || (event.getKeyCode() == 66))
+        i = 0;
+        while (true) {
+            return i;
             if (!event.isShiftPressed()) {
-                if (isPreparedForSending()) {
-                    confirmSendMessageIfNeeded();
-                }
-                return true;
+                if (isPreparedForSending())
+                confirmSendMessageIfNeeded();
+                i = 1;
+                continue;
             }
-            return false;
+        i = 0;
+        continue;
+        if (isPreparedForSending())
+        confirmSendMessageIfNeeded();
+        i = 1;
         }
-
-        if (isPreparedForSending()) {
-            confirmSendMessageIfNeeded();
-        }
-        return true;
     }
 
     private final TextWatcher mTextEditorWatcher = new TextWatcher() {

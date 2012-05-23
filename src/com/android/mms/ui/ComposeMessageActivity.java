@@ -3343,7 +3343,7 @@ public class ComposeMessageActivity extends Activity
         i = 0;
         while (true) {
             return (i !=0);
-                if (!event.isShiftPressed()) {
+            if (!event.isShiftPressed()) {
                 if (isPreparedForSending())
                 confirmSendMessageIfNeeded();
                 i = 1;

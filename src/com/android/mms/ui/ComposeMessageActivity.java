@@ -3336,9 +3336,10 @@ public class ComposeMessageActivity extends Activity
         startActivityForResult(intent, REQUEST_CODE_PICK);
     }
 
-    public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+    public boolean onEditorAction(TextView v, int actionId, int keyCode, KeyEvent event) {
         if (event != null) {
-            if ((event.getKeyCode() == 23) || (event.getKeyCode() == 66)) {
+            switch (keyCode) {
+            case KeyEvent.KEYCODE_ENTER:
                     if (!event.isShiftPressed()) {
                         if (isPreparedForSending())
                         confirmSendMessageIfNeeded();

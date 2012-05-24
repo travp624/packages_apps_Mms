@@ -3337,24 +3337,21 @@ public class ComposeMessageActivity extends Activity
     }
 
     public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-        int i;  
-        if (event != null)
-        if ((event.getKeyCode() == 23) || (event.getKeyCode() == 66))
-        i = 0;
-        while (true) {
-            return (i !=0);
-            if (!event.isShiftPressed()) {
-                if (isPreparedForSending())
-                confirmSendMessageIfNeeded();
-                i = 1;
-                continue;
-            }
-            i = 0;
-            continue;
-            if (isPreparedForSending())
-            confirmSendMessageIfNeeded();
-            i = 1;
+        if (event != null) {
+            if ((event.getKeyCode() == 23) || (event.getKeyCode() == 66)) {
+                    if (!event.isShiftPressed()) {
+                        if (isPreparedForSending())
+                        confirmSendMessageIfNeeded();
+                    }    
+                    return true;
+             }
+             return false;
         }
+
+        if (isPreparedForSending()) {
+            confirmSendMessageIfNeeded();
+        }
+        return true;
     }
 
     private final TextWatcher mTextEditorWatcher = new TextWatcher() {

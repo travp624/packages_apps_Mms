@@ -3336,23 +3336,27 @@ public class ComposeMessageActivity extends Activity
         startActivityForResult(intent, REQUEST_CODE_PICK);
     }
 
-    public boolean onEditorAction(TextView v, int actionId, int keyCode, KeyEvent event) {
-        if (event != null) {
-            switch (keyCode) {
-            case KeyEvent.KEYCODE_ENTER:
-                    if (!event.isShiftPressed()) {
-                        if (isPreparedForSending())
-                        confirmSendMessageIfNeeded();
-                    }    
-                    return true;
-             }
-             return false;
-        }
+    public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+        if (event !=null) {
+            // When Enter key is pressed, a new line will be added instead of sending the message.
+            if (event.getKeyCode() == 66) {
+		    return false;
+            }
+            // if shift key is down, then we want to insert the '\n' char in the TextView;
+            // otherwise, the default action is to send the message.
+	    if (!event.isShiftPressed()) {
+	            if (isPreparedForSending()){
+			confirmSendMessageIfNeeded();
+	     	    }
+	            return true;
+            }	
+            return false;
+	}
 
-        if (isPreparedForSending()) {
-            confirmSendMessageIfNeeded();
-        }
-        return true;
+	if(isPreparedForSending()) {
+	    confirmSendMessageIfNeeded();
+	}
+	return true;
     }
 
     private final TextWatcher mTextEditorWatcher = new TextWatcher() {

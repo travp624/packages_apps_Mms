@@ -371,10 +371,8 @@
     <string name="template_delete">Löschen</string>
     <string name="template_ctx_menu_title">Aktionen</string>
     <string name="template_list_title">Vorlagen</string>
-    <string name="template_edit_title">Vorlage bearbeiten</string>
     <string name="template_new_title">Neue Vorlage</string>
     <string name="template_insert">Vorlage einfügen</string>
-    <string name="template_insert_ctx_menu_title">Text bearbeiten</string>
     <string name="template_gesture_draw">Geste im unteren Feld zeichnen</string>
     <string name="template_not_present_error">Es ist keine Vorlage definiert</string>
     <string name="template_not_present_error_title">Fehler</string>

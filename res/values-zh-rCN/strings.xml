@@ -347,10 +347,8 @@
     <string name="template_delete">删除</string>
     <string name="template_ctx_menu_title">动作</string>
     <string name="template_list_title">模板</string>
-    <string name="template_edit_title">编辑模板</string>
     <string name="template_new_title">新建模板</string>
     <string name="template_insert">插入模板</string>
-    <string name="template_insert_ctx_menu_title">编辑文本</string>
     <string name="template_gesture_draw">在下面的空白处画一个手势</string>
     <string name="template_not_present_error">您没有定义任何模板</string>
     <string name="template_not_present_error_title">错误</string>

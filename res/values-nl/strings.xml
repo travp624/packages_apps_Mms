@@ -329,7 +329,6 @@
     <!-- CYANOGENMOD EDITS -->
 
     <string name="pref_title_sms_split_160">Sms splitsen</string>
-    <string name="pref_summary_sms_split_160">Splits bericht elke 160 karakters</string>
     <string name="pref_title_sms_split_counter">Sms-teller</string>
     <string name="pref_summary_sms_split_counter">Voeg teller toe aan sms-berichten, zoals: (1/2)</string>
     <string name="prefs_templates_settings">Sms-sjablonen</string>

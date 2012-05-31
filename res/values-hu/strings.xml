@@ -374,5 +374,8 @@
     <string name="template_not_present_error_title">Hiba</string>
     <string name="template_save">Mentés</string>
     <string name="template_select">Válasszon sablont</string>
-
+    <string name="pref_title_sms_EnableMultipartSMS">Üzenetek konvertálása</string>
+    <string name="pref_summary_sms_EnableMultipartSMS">Hosszú üzenetek konvertálása MMS formátumra</string>
+    <string name="pref_title_sms_SmsToMmsTextThreshold">SMS hossz</string>
+    <string name="pref_summary_sms_SmsToMmsTextThreshold">"MMS-é konvertálás <xliff:g id="COUNT">%1$s</xliff:g> SMS felett"</string>
 </resources>

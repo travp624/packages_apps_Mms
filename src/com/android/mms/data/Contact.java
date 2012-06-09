@@ -997,7 +997,7 @@ public class Contact {
                         synchronized (entry) {
                             entry.mPresenceResId = getPresenceIconResourceId(
                                     cursor.getInt(EMAIL_STATUS_COLUMN));
-                            entry.mPersonId = cursor.getLong(EMAIL_ID_COLUMN);
+                            entry.mPersonId = cursor.getLong(EMAIL_CONTACT_ID_COLUMN);
 
                             String name = cursor.getString(EMAIL_NAME_COLUMN);
                             if (TextUtils.isEmpty(name)) {

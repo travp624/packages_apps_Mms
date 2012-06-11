@@ -389,6 +389,47 @@ public class ComposeMessageActivity extends Activity
                     s = s.replace("œ", "oe");
                     s = s.replace("Ł", "L");
                     s = s.replace("ł", "l");
+                    s = s.replace("Đ", "DJ");
+                    s = s.replace("đ", "dj");
+                    s = s.replace("Α", "A");
+                    s = s.replace("Β", "B");
+                    s = s.replace("Ε", "E");
+                    s = s.replace("Ζ", "Z");
+                    s = s.replace("Η", "H");
+                    s = s.replace("Ι", "I");
+                    s = s.replace("Κ", "K");
+                    s = s.replace("Μ", "M");
+                    s = s.replace("Ν", "N");
+                    s = s.replace("Ο", "O");
+                    s = s.replace("Ρ", "P");
+                    s = s.replace("Τ", "T");
+                    s = s.replace("Υ", "Y");
+                    s = s.replace("Χ", "X");
+                    s = s.replace("α", "A");
+                    s = s.replace("β", "B");
+                    s = s.replace("γ", "Γ");
+                    s = s.replace("δ", "Δ");
+                    s = s.replace("ε", "E");
+                    s = s.replace("ζ", "Z");
+                    s = s.replace("η", "H");
+                    s = s.replace("θ", "Θ");
+                    s = s.replace("ι", "I");
+                    s = s.replace("κ", "K");
+                    s = s.replace("λ", "Λ");
+                    s = s.replace("μ", "M");
+                    s = s.replace("ν", "N");
+                    s = s.replace("ξ", "Ξ");
+                    s = s.replace("ο", "O");
+                    s = s.replace("π", "Π");
+                    s = s.replace("ρ", "P");
+                    s = s.replace("σ", "Σ");
+                    s = s.replace("τ", "T");
+                    s = s.replace("υ", "Y");
+                    s = s.replace("φ", "Φ");
+                    s = s.replace("χ", "X");
+                    s = s.replace("ψ", "Ψ");
+                    s = s.replace("ω", "Ω");
+                    s = s.replace("ς", "Σ");
 
                     output.append(s);
                 }
@@ -4026,13 +4067,15 @@ public class ComposeMessageActivity extends Activity
     private void showEmojiDialog() {
         if (mEmojiDialog == null) {
             int[] icons = EmojiParser.DEFAULT_EMOJI_RES_IDS;
+
             int layout = R.layout.emoji_insert_view;
             mEmojiView = getLayoutInflater().inflate(layout, null);
 
-            final GridView gridView = (GridView) mEmojiView.findViewById(R.id.emoji_grid_view);;
+            final GridView gridView = (GridView) mEmojiView.findViewById(R.id.emoji_grid_view);
             gridView.setAdapter(new ImageAdapter(this, icons));
             final EditText editText = (EditText) mEmojiView.findViewById(R.id.emoji_edit_text);
             final Button button = (Button) mEmojiView.findViewById(R.id.emoji_button);
+
             gridView.setOnItemClickListener(new OnItemClickListener() {
                 public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
                     // We use the new unified Unicode 6.1 emoji code points

@@ -94,4 +94,8 @@
     <item>0,800,200,800,200,800</item>
     <item>Personalizzato</item>
   </string-array>
-</resources>
+  <string-array name="pref_entries_input_type">
+    <item>Emoticon</item>
+    <item>Invia messaggio</item>
+    <item>Vai a capo</item>
+  </string-array>

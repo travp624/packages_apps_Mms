@@ -173,6 +173,8 @@
     <string name="pref_summary_notification_vibrateWhen" msgid="669655090822561447">"Attiva anche vibrazione alla notifica"</string>
     <string name="pref_title_notification_ringtone" msgid="5467265237106229952">"Scegli suoneria"</string>
     <string name="pref_messages_to_save" msgid="3202539743892934926">"Imposta numero di messaggi da salvare"</string>
+    <string name="pref_title_input_type">Azione tasto smile</string>
+    <string name="pref_summary_input_type">Seleziona l'azione del tasto in basso a destra della tastiera virtuale quando componi un messaggio</string>
     <string name="pref_title_sms_split_counter">Contatore SMS</string>
     <string name="pref_summary_sms_split_counter">Indica quanti SMS compongono il messaggio</string>
   <string-array name="prefEntries_vibrateWhen">
@@ -285,7 +287,7 @@
     <string name="saved_ringtone" msgid="3847363932276708626">"Suoneria salvata."</string>
     <string name="saved_ringtone_fail" msgid="4778500070919251116">"Salvataggio suoneria non riuscito."</string>
     <string name="menu_insert_smiley" msgid="4964504393061025071">"Inserisci emoticon"</string>
-	<string name="menu_insert_emoji">Inserisci emoji</string>
+    <string name="menu_insert_emoji">Inserisci emoji</string>
     <string name="select_link_title" msgid="3371818607625768447">"Scegli azione"</string>
     <string name="slide_number" msgid="1923958526266726635">"Diapositiva <xliff:g id="NUMBER">%s</xliff:g>"</string>
   <plurals name="slide_duration">
@@ -329,7 +331,7 @@
     <string name="error_state_text" msgid="7918866106335387710">"Lo stato dei thread e dei destinatari non è coerente. Crea un rapporto bug e segnalalo su http://go/droidanizer."</string>
     <string name="label_mms_push">MMS Push</string>
     <string name="desc_mms_push">Trasferisci MMS dalla posta in uscita alla rete</string>
-	<plurals name="recipient_count">
+  <plurals name="recipient_count">
     <item quantity="other" msgid="7338580381574463136">"<xliff:g id="NUMBER">%1$s</xliff:g> persone"</item>
   </plurals>
     <string name="disable_notifications_dialog_message" msgid="7644011234972074096">"Interrompere notifiche di messaggi di testo duplicati dell\'applicazione Messaggi predefinita?"</string>
@@ -353,7 +355,7 @@
     <string name="template_not_present_error">Non hai ancora definito alcun modello</string>
     <string name="template_not_present_error_title">Errore</string>
     <string name="template_select">Seleziona un modello</string>
-    <string name="template_cancel_confirm_title">Warning</string>
+    <string name="template_cancel_confirm_title">Attenzione</string>
     <string name="template_cancel_confirm_text">Vuoi davvero cancellare questo modello?</string>
     <string name="gestures_already_present">Attenzione! Una gesture simile è associata ad un altro template</string>
     <string name="pref_extra_settings">Impostazioni aggiuntive</string>

@@ -22,7 +22,6 @@ import com.android.mms.MmsConfig;
 import com.android.mms.R;
 
 import android.app.ActionBar;
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
@@ -67,10 +66,10 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     public static final String AUTO_RETRIEVAL           = "pref_key_mms_auto_retrieval";
     public static final String RETRIEVAL_DURING_ROAMING = "pref_key_mms_retrieval_during_roaming";
     public static final String AUTO_DELETE              = "pref_key_auto_delete";
-    public static final String MANAGE_TEMPLATES = "pref_key_templates_manage";
-    public static final String SHOW_GESTURE = "pref_key_templates_show_gesture";
-    public static final String GESTURE_SENSITIVITY = "pref_key_templates_gestures_sensitivity";
-    public static final String GESTURE_SENSITIVITY_VALUE = "pref_key_templates_gestures_sensitivity_value";
+    public static final String MANAGE_TEMPLATES         = "pref_key_templates_manage";
+    public static final String SHOW_GESTURE             = "pref_key_templates_show_gesture";
+    public static final String GESTURE_SENSITIVITY      = "pref_key_templates_gestures_sensitivity";
+    public static final String GESTURE_SENSITIVITY_VALUE= "pref_key_templates_gestures_sensitivity_value";
     public static final String STRIP_UNICODE            = "pref_key_strip_unicode";
     public static final String ENABLE_EMOJIS            = "pref_key_enable_emojis";
     public static final String FULL_TIMESTAMP           = "pref_key_mms_full_timestamp";
@@ -80,6 +79,7 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     public static final String NOTIFICATION_VIBRATE_CALL ="pre_key_mms_notification_vibrate_call";
     public static final String DISPLAY_HIDESENDERNAME   = "pref_key_notification_hidesendername";
     public static final String DISPLAY_HIDEMESSAGE      = "pref_key_notification_hidemessage";
+    public static final String INPUT_TYPE               = "pref_key_mms_input_type";
 
     // Menu entries
     private static final int MENU_RESTORE_DEFAULTS    = 1;

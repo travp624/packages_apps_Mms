@@ -118,4 +118,16 @@
 		<item>custom</item>
 	</string-array>
 
+    <string-array name="pref_entries_input_type">
+        <item>Emoji</item>
+        <item>Send</item>
+        <item>Enter for a new line</item>
+    </string-array>
+
+    <string-array name="pref_values_input_type" translatable="false">
+        <item>64</item><!-- InputType.TYPE_TEXT_VARIATION_SHORT_MESSAGE constant  -->
+        <item>0</item><!-- default input -->
+        <item>80</item><!-- InputType.TYPE_TEXT_VARIATION_LONG_MESSAGE constant  -->
+    </string-array>
+
 </resources>
